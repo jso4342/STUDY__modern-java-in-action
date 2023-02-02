@@ -120,7 +120,8 @@
   LocalDateTime timeFromInstant = LocalDateTime.ofInstant(instant, romeZone)
 ```
 > (1)처럼 지역 ID로 특정 ZoneId를 구분하는데 지역 ID는 {지역}/{도시} 형식으로 이루어지며 IANA Time Zone Database에서 제공하는 지역 집합 정보를 사용한다. ZoneId 객체를
-> 얻은 다음 LocalDate, LocalDateTime, Instant를 이용해 ZonedDateTime 인스턴스로 변환할 수 있다. ZonedDateTime은 지정한 시간대에 상대적인 시점을 표현한다.
+> 얻은 다음 LocalDate, LocalDateTime, Instant를 이용해 ZonedDateTime 인스턴스로 변환할 수 있다. ZonedDateTime은 지정한 시간대에 상대적인 시점을 표현한다. 그리고 (2)처럼
+> ZoneId를 이용해서 LocalDateTime을 Instant로 바꾸는 방법도 있다
 - ZonedDateTime = LocalDateTime + ZoneId
 - LocalDateTime = LocatDate + LocalTime
 
